@@ -1,40 +1,31 @@
-# jot-your-thoughts
-Write notes to organize thoughts and keep track of tasks you need to complete.
+# Jot Your Thoughts
 
-starter is from code here: https://github.com/coding-boot-camp/miniature-eureka
+## Description
 
+This web application is for note taking.  Anything that comes to your mind input it here to save it so you wont forget it!
 
-Acceptance Criteria
+This application utilizes express.js and saves/retrieve note data from a JSON file.
 
-GIVEN a note-taking application
+## Usage
 
-WHEN I open the Note Taker
+Please see Heroku Deployed Page for Jot Your Thoughts here:
 
-THEN I am presented with a landing page with a link to a notes page
+<a href="https://shielded-woodland-32106.herokuapp.com/notes">Jot-Your-Thoughts</a>
 
-WHEN I click on the link to the notes page
+![alt text](/11snipet.jpg)
 
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+## Credits
 
-WHEN I enter a new note title and the note’s text
+https://insomnia.rest/
 
-THEN a Save icon appears in the navigation at the top of the page
+https://devcenter.heroku.com/
 
-WHEN I click on the Save icon
+Node.js - https://nodejs.org/en/
 
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+EXPRESS - https://expressjs.com/en/starter/installing.html
 
-WHEN I click on an existing note in the list in the left-hand column
+https://stackoverflow.com/
 
-THEN that note appears in the right-hand column
+UW BOOTCAMP COURSE
 
-WHEN I click on the Write icon in the navigation at the top of the page
-
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-
-
-
-Bonus
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
-
-DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
+Tutoring
