@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const PORT = 3001;
 const app = express();
+const uuid = require('uuid')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -27,6 +28,7 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
   const database = fs.readFileSync('db/db.json');
   const data = JSON.parse(database);
+  req.body.id = uuid.v1();
   data.push(req.body);
   const update = JSON.stringify(data, null, 2);
   fs.writeFileSync('db/db.json', update);
@@ -39,13 +41,14 @@ app.delete('/api/notes/:id', (req, res) => {
   const data = JSON.parse(database);
   var flag = false;
   for(var i = 0; i < data.length && !flag; i++){
-    if(data[i].id === req.body.id){
+    if(data[i].id === req.params.id){
       data.splice(i, 1);
       flag = true;
     }
   }
   const update = JSON.stringify(data, null, 2);
   fs.writeFileSync('db/db.json', update);
+  res.json("Success");
 });
 
 // port open
