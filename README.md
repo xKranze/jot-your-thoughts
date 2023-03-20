@@ -16,6 +16,9 @@ Please see Heroku Deployed Page for Jot Your Thoughts here:
 
 ## Credits
 
+Starter code provided from:
+https://github.com/coding-boot-camp/miniature-eureka
+
 Insomnia - https://insomnia.rest/
 
 Heroku - https://devcenter.heroku.com/
