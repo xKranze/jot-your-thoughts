@@ -1,7 +1,7 @@
 const fs = require('fs');
 const express = require('express');
 const path = require('path');
-const PORT = 3001;
+//const PORT = 3001;
 const app = express();
 const uuid = require('uuid')
 
@@ -52,6 +52,6 @@ app.delete('/api/notes/:id', (req, res) => {
 });
 
 // port open
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
+//app.listen(PORT, () =>
+//  console.log(`App listening at http://localhost:${PORT} 🚀`)
+//);
