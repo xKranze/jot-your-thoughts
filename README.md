@@ -16,15 +16,15 @@ Please see Heroku Deployed Page for Jot Your Thoughts here:
 
 ## Credits
 
-https://insomnia.rest/
+Insomnia - https://insomnia.rest/
 
-https://devcenter.heroku.com/
+Heroku - https://devcenter.heroku.com/
 
 Node.js - https://nodejs.org/en/
 
 EXPRESS - https://expressjs.com/en/starter/installing.html
 
-https://stackoverflow.com/
+StackOverflow - https://stackoverflow.com/
 
 UW BOOTCAMP COURSE
 
